@@ -3,5 +3,19 @@ label {
     text-align: center;
     line-height: 150%;
     font-size: .85em;
-    color: white;
+    color:white;
+    font-weight: bold;
+}
+.jumbotron{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    background-color:#e9ecef;
+    margin-top: 0 !important;
+    margin-bottom: 3rem;
 }
