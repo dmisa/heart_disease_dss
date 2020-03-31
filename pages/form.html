@@ -35,62 +35,160 @@
   <div class="container-fluid h-100 text-dark pt-0 " id="form">
     <div class="row justify-content-center align-items-center h-100">
       <div class="col col-sm-6 col-md-6 col-lg-5 col-xl-5 border border-dark rounded bg-dark">
-        <form action="">
+        <form class="needs-validation" novalidate action="">
+          
+          
           <div class="form-group">
             <label for="age">Age</label>
-            <input type="text" class="form-control" id="age" />
-          </div>          
+            <input type="text"  class="form-control" pattern="[1]{1}[0-9]{0,2}" placeholder="your age" id="age" required/>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid age! Number >1
+            </div>
+          
+          </div>
+
           <div class="form-group">
             <label for="sex">Gender</i></label>
-            <select class="form-control" id="sex">
+            <select class="form-control text-center" id="sex" required>
+                      <option hidden disabled selected>Select your option</option>
                       <option>Man</option>
                       <option>Woman</option>
-                    </select>
+            </select>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid age! >1
+            </div>
           </div>
+
           <div class="form-group">
             <label for="age">Chest</label>
-            <input type="text" class="form-control" id="chest" />
-          </div>          
+            <input type="text" class="form-control" id="chest" placeholder="chest value" required/>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid chest value![number](its usually between 1 and 4)
+            </div>
+          </div>     
+          
           <div class="form-group">
             <label for="rbp">Resting Blood Pressure</label>
-            <input type="text" class="form-control" id="rbp" />
-          </div>          
+            <input type="text" class="form-control" id="rbp" placeholder="resting blood pressure" required/>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid rbp! A number usually between 94 and 200.
+            </div>
+          </div>
+
           <div class="form-group">
             <label for="schol">Serum Cholestoral</label>
-            <input type="text" class="form-control" id="schol" />
+            <input type="text" class="form-control" id="schol" pattern="^\d{4}$" placeholder="serum cholestolar" required/>
+                        <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid serum cholestoral. Number usually between 126 and 564.
+            </div>
           </div>
+
           <div class="form-group">
             <label for="fbs">Fasting Blood Sugar</label>
-            <input type="text" class="form-control" id="fbsl" />
+            <input type="text" class="form-control" id="fbsl" pattern="^\d{2}$" placeholder="fasting blood sugar" required/>
+                        <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid fasting blood sugar. Number usually between 0 and 1.
+            </div>
           </div>
+
           <div class="form-group">
             <label for="rer">Resting Electrocardiographic Results</label>
-            <input type="text" class="form-control" id="rer" />
+            <input type="text" class="form-control" id="rer" pattern="^\d{2}$" placeholder="resting electrocardiographic results" required/>
+                        <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid resting electrocardiographic result. Number usually between 0 and 2.
+            </div>
           </div>
+
           <div class="form-group">
             <label for="mhra">Maximum Heart Rate Achieved</label>
-            <input type="text" class="form-control" id="mhra" />
+            <input type="text" class="form-control" id="mhra" pattern="^\d{4}$" placeholder="max heart rate achieved" required/>
+                        <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid max heart rate achieved. Number usually between 71 and 202.
+            </div>
           </div>
+
           <div class="form-group">
             <label for="eia">Excercise Induced Angina</label>
-            <input type="text" class="form-control" id="eia" />
+            <input type="text" class="form-control" id="eia" pattern="^\d{2}$" placeholder="excercise induced angina" required/>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid excercise induced angina. Number usually between 0 and 1.
+            </div>
           </div>
+
           <div class="form-group">
             <label for="oldpeak">Oldpeak</label>
-            <input type="text" class="form-control" id="oldpeak" />
+            <input type="text" class="form-control" id="oldpeak" pattern="^\d{2}$" placeholder="oldpeak" required/>
+                        <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid oldpeak. Number usually between 0 and 6.2 
+            </div>
           </div>
+
           <div class="form-group">
             <label for="slope">Slope</label>
-            <input type="text" class="form-control" id="slope" />
+            <input type="text" class="form-control" id="slope" pattern="^\d{2}$" placeholder="slope" required/>
+                        <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid slope. Number usually between 1 and 3.
+            </div>
           </div>
+
           <div class="form-group">
             <label for="nomv">Number Of Major Vessels</label>
-            <input type="text" class="form-control" id="nomv" />
+            <input type="text" class="form-control" id="nomv" pattern="^\d{2}$" placeholder="number of major vessels" required/>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid number of major vessels. Number usually between 0 and 3.
+            </div>
           </div>
+
           <div class="form-group">
             <label for="thal">Thal</label>
-            <input type="text" class="form-control" id="thal" />
+            <input type="text" class="form-control" id="thal" pattern="^\d{2}$" placeholder="thal" required/>
+                        <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please provide a valid thal. Number usually between 3 and 7.
+            </div>
           </div>
+
+
+
+
           <div class="form-group">
             <div class="container">
               <div class="row">
@@ -99,7 +197,17 @@
               </div>
             </div>
           </div>
-  
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label text-left" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
         </form>
       </div>
     </div>
@@ -112,25 +220,10 @@
       </footer>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ <script src="../js/validation.js"></script>
 
 </body>
 </html>
