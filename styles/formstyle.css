@@ -19,4 +19,7 @@ hr {
     margin-top: 0 !important;
     margin-bottom: 3rem;
 }
+@media(max-width:360px){
+    .footer{display:none;}
+}
 

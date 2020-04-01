@@ -36,7 +36,10 @@ hr {
     margin-bottom: 0 !important;
     margin-top: 3px;
   }
-@media (max-width: 544px) {  
+@media (max-width: 770px) {  
     .titlos {font-size: 2.6rem;}
+}
+@media(max-width: 450px){
+    .footer{display: none;}
 }
   
