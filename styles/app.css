@@ -38,8 +38,24 @@ hr {
   }
 @media (max-width: 770px) {  
     .titlos {font-size: 2.6rem;}
+    hr{
+        margin-bottom: 5rem;
+    }
+    .titlos{
+        margin-bottom: 2rem;
+    }
+    .ipotitlos{font-size: 1.5rem;}
 }
 @media(max-width: 450px){
     .footer{display: none;}
 }
   
+@media (max-width: 300px) {  
+    .ipotitlos {font-size: 1.3rem;}
+    hr{
+        margin-bottom: 5rem;
+    }
+    .titlos{
+        margin-bottom: 2rem;
+    }
+}
