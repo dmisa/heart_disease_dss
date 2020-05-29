@@ -11,6 +11,17 @@
     <link rel="stylesheet" type="text/css" href="../styles/app.css">
     <link href="../styles/carousel.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../styles/background.css">
+    <style>
+
+
+      .titlos{
+        @media (min-width: 768px) {
+          font-size: 18px;
+        }
+        }
+         
+    </style>
+
     <title>About the project</title>
 </head>
 <body>
@@ -26,132 +37,108 @@
           </div>
         </div>
       </nav>
-
-
-
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+  
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            <img class="first-slide img-fluid" src="../images/data3.jpg" alt="First slide">
             <div class="container">
-              <div class="carousel-caption text-left">
-                <h1>Example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <div class="carousel-caption text-left ">
+                <h1 class="titlos">Our Dataset.</h1>
+                <p>The purpose of our site is to predict if a person has heart disease.
+                   To do so we used a dataset which contains 13 attributes (age,sex,resting blood pressure,chest,
+                   serum cholestoral,fasting blood sugar,resting electrocardiographic results,
+                   maximum heart rate achieved,exercise induced angina,oldpeak,slope,number of major vessels,thal).
+                   The data was collected from 269 samples. We then processed our data on Weka , trying different 
+                   filters and classifiers to get the best possible results.</p>
+                <p><a class="btn btn-lg btn-primary" href="http://tunedit.org/repo/UCI/heart-statlog.arff" role="button">Go to dataset</a></p>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-            <div class="container">
-              <div class="carousel-caption text-right">
-                <h1>One more for good measure.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>      
+
+
+      </div>
+      </div>
+
+
+
 
       <div class="container marketing">
+        <h1 class="display-3 mb-5 mt-5">How we made the website</h1>
+        <hr class="featurette-divider">
 
         <!-- Three columns of text below the carousel -->
-        <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <img class="rounded-circle mb-2" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Bootstrap</h2>
+            <p>We used bootsrap4 + html + a little css + js (for form validation) to make the website.</p>
+            <p><a class="btn btn-secondary" href="https://getbootstrap.com/" target="_blank" role="button">Bootstrap page &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <div class="col-lg-6">
+            <img class="rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="Generic placeholder image" width="140" height="140">
+            <h2>PHP</h2>
+            <p>We used PHP to make the if statements that decide the absence or presence of heart disease.</p>
+            <p><a class="btn btn-secondary" href="https://www.php.net/" target="_blank" role="button">PHP page &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
 
         <!-- START THE FEATURETTES -->
-
+        <h1 class="display-3 mb-5">How we used weka for classification</h1>
         <hr class="featurette-divider">
 
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <div class="row featurette mb-5">
+          <div class="col-md-6">
+            <h2 class="featurette-heading">Preprocess <span class="text-muted">Attribute Selection</span></h2>
+            <p class="lead">We used <strong>attribute selection</strong> to increase the precision of the algorithm for classification. Moreover, precision of J48 algorithm became <strong>0.811</strong>. It was <strong>0.766</strong>. Tp rate was <strong>0.767</strong> and became <strong>0.811</strong>. Attributes that derived from attribute selection are: 1)chest, 2)resting electrocardiographic results, 3)max heart rate, 4)exercise induces angina, 5)oldpeak, 6)number of major vessels, 7)thal. So user must fill in only these 7 attributes in the form. <strong>Click image to download!</strong>
+
+            </p>
           </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <div class="col-md-6">
+            <a href="../images/attributesel.png" download>
+              <img class="featurette-image img-fluid mx-auto mt-5" src="../images/attributesel.png" alt="attrsel">
+              </a>
           </div>
         </div>
 
-        <hr class="featurette-divider">
 
-        <div class="row featurette">
+        <div class="row featurette mb-5">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Classify <span class="text-muted">J-48 algorithm</span></h2>
+            <p class="lead">We used </strong> J-48</strong> algorithm for classification because it was more precise than all tested algorithms (tp rate, precision). We tested 1)Naive Bayes, IBK, J48, PARTW. <strong>Click image to download!</strong></p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <a href="../images/j48.png" download>
+              <img class="featurette-image img-fluid mx-auto mt-5" src="../images/j48.png" alt="tree">
+            </a>
           </div>
         </div>
 
-        <hr class="featurette-divider">
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Cross-validation 10 folds</h2>
+            <p class="lead">We used cross-validation with 10 folds because it is more valid than training and testing. Training and testing had higher percentage of precision but 10 fold cross-validation had high precision and higher percentage of tp-rate than training+testing. <strong>Click the image to download output txt from weka.</strong> </p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <a href="j48-csf.asc" download>
+              <img class="featurette-image img-fluid mx-auto mt-5" src="../images/cvalid.png" alt="classification">
+            </a>
           </div>
         </div>
 
-        <hr class="featurette-divider">
 
         <!-- /END THE FEATURETTES -->
+        <hr class="featurette-divider">
 
       </div><!-- /.container -->
 
 
       <!-- FOOTER -->
-      <footer class="container">
+      <footer class="container mt-5">
         <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; Dimitris Misailidis, Christos Kotrotsios &middot; <a>Privacy</a> &middot; <a>Terms</a></p>
       </footer>
     </main>
 
